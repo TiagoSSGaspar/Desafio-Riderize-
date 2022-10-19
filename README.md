@@ -45,29 +45,16 @@ $ npm run start:dev
 $ npm run start:prod
 ```
 
-## Test
 
-```bash
-# unit tests
-$ npm run test
+### Autor
 
-# e2e tests
-$ npm run test:e2e
+<a target="_blank" href="https://github.com/TiagoSSGaspar?tab=repositories">
+ <img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/33143008?s=400&u=7a1364ed59dc809c9538531f6990adc8dc56dfcf&v=4" width="100px;" alt=""/>
+</a> 
+<br />
 
-# test coverage
-$ npm run test:cov
-```
+Feito com ❤️ por Tiago S S Gaspar!
 
-## Support
-
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
-
-## Stay in touch
-
-- Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
-
-## License
+[![Linkedin Badge](https://img.shields.io/badge/-Tiago-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/tiago-sousa-silva-gaspar)](https://www.linkedin.com/in/tiago-sousa-silva-gaspar/)
 
 Nest is [MIT licensed](LICENSE).
