@@ -22,4 +22,38 @@ directive @inaccessible on FIELD_DEFINITION | OBJECT | INTERFACE | UNION | ARGUM
 
 directive @override(from: String!) on FIELD_DEFINITION
 
+type BikeRide {
+  id: ID!
+  name: String!
+  start_date: DateTime!
+  start_date_registration: DateTime!
+  end_date_registration: DateTime!
+  additional_information: String
+  start_place: String!
+  participants_limit: Float
+}
+
+"""
+A date-time string at UTC, such as 2019-12-03T09:54:33Z, compliant with the date-time format.
+"""
+scalar DateTime
+
+type Query {
+  bikeRides: [BikeRide!]!
+}
+
+type Mutation {
+  createBikeRide(data: CreateBikeRideInput!): BikeRide!
+}
+
+input CreateBikeRideInput {
+  name: String!
+  start_date: DateTime!
+  start_date_registration: DateTime!
+  end_date_registration: DateTime!
+  additional_information: String
+  start_place: String!
+  participants_limit: Float
+}
+
 scalar link__Import

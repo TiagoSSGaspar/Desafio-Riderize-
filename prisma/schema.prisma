@@ -11,32 +11,38 @@ datasource db {
 }
 
 model Customer {
-  id                  String                @id @default(uuid())
+  id String @id @default(uuid())
 
   bike_rides Rides[]
 
+  created_at DateTime @default(now())
+  updated_at DateTime @default(now()) @updatedAt
 }
 
 model BikeRide {
-  id                      String                @id @default(uuid())
+  id                      String   @id @default(uuid())
   name                    String
   start_date              DateTime
-  start_date_registration DateTime              @default(now())
+  start_date_registration DateTime
   end_date_registration   DateTime
   additional_information  String?
   start_place             String
   participants_limit      Int?
-  participant     Rides[]
+  participants             Rides[]
 
+  created_at DateTime @default(now())
+  updated_at DateTime @default(now()) @updatedAt
 }
 
 model Rides {
-  @@id([user_id])
-
   bikeRide BikeRide @relation(fields: [ride_id], references: [id])
   ride_id  String
 
-  user    Customer   @relation(fields: [user_id], references: [id])
+  user    Customer @relation(fields: [user_id], references: [id])
   user_id String
 
+  created_at DateTime @default(now())
+  updated_at DateTime @default(now()) @updatedAt
+
+  @@id([user_id])
 }
